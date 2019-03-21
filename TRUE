@@ -1,0 +1,6 @@
+The script you are running has basename cat_yuml.sh, dirname /Users/mertnuhoglu/projects/yuml2data/inst/bash
+running /Users/mertnuhoglu/projects/yuml2data/inst/bash/cat_yuml.sh
+DATA_MODEL_DIR = /Users/mertnuhoglu/projects/itr/walkthrough_vrp/dm2
+SCRIPT_DIR = /Users/mertnuhoglu/projects/yuml2data/inst/bash
+[?1002h[?1049h[?1h=[1;29r[23m[24m[0m[H[J[?25l[28;1H"~/projects/itr/walkthrough_vrp/dm2/rdb/view/datamodel_sdb_p01.[29;1Hyuml" 0L, 0C</walkthrough_vrp/dm2/rdb/view/datamodel_sdb.yuml"<rp/dm2/rdb/view/datamodel_sdb.yuml" 0L, 0C written[?1002l
+[?1l>[34h[?25h[?1049l
