@@ -27,8 +27,7 @@ devtools::install()
 opt03: building on terminal
 
 ``` bash
-cd ~/projects
-R CMD build yuml2data
-R CMD INSTALL yuml2data_0.1.0.tar.gz
+cd ~/projects/yuml2data
+make
 ``` 
 

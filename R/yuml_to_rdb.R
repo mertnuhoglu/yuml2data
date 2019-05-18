@@ -5,6 +5,10 @@ NULL
 yuml_to_rdb = function(data_model_dir) {
   cat_yuml.sh = system.file("bash/cat_yuml.sh", package = "yuml2data")
   system2(cat_yuml.sh, data_model_dir, stdout=TRUE)
+	##> ~/projects/itr/yuml2data_wt/dm/rdb/view/datamodel_sdb.yuml
+  ##>     [address_variant| address_variant_id INT PK; address_id INT FK @NN; company_extid TEXT; address TEXT; ]
+  ##>     [address| address_id INT PK; address TEXT; company_extid TEXT; ]
+  ##>     [administrative_place| seq; key_place TEXT; provinceCode TEXT; admLvl1 TEXT; admLvl2 TEXT; admLvl3 TEXT; admLvl4 TEXT; postCode TEXT; conti TEXT; lat TEXT; lon TEXT; ]
 
   yuml_lines = r_datamodel_sdb(data_model_dir) %>% 
     rutils::grepv("\\|")

@@ -1,4 +1,14 @@
 #' @export
+r_psk_file_structure = function(data_model_dir = env_data_model_dir()) {
+	readr::read_tsv(sprintf("%s/meta/psk_file_structure.tsv", data_model_dir))
+}
+
+#' @export
+r_dependency_order = function(data_model_dir = env_data_model_dir()) {
+	readr::read_tsv(sprintf("%s/meta/dependency_order.tsv", data_model_dir))
+}
+
+#' @export
 r_datamodel_sdb = function(data_model_dir = env_data_model_dir()) {
 	readLines(sprintf("%s/rdb/view/datamodel_sdb.yuml", data_model_dir))
 }

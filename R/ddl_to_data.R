@@ -1,4 +1,5 @@
 
+#' @export
 main_ddl_to_data = function() {
   data_model_dir = env_data_model_dir()
   io_write_enum_var(data_model_dir)
