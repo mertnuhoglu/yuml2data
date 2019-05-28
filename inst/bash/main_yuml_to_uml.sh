@@ -1,8 +1,8 @@
 #!/bin/sh
 # usage:
-# sh /Users/mertnuhoglu/projects/yuml2data/inst/bash/main_yuml_to_uml.sh /Users/mertnuhoglu/projects/itr/itr_documentation/data_model
+# sh /Users/mertnuhoglu/projects/yuml2data/inst/bash/main_yuml_to_uml.sh /Users/mertnuhoglu/projects/itr/vrp_doc/data_model
 
-# DATA_MODEL_DIR=~/projects/itr/itr_documentation/data_model
+# DATA_MODEL_DIR=~/projects/itr/vrp_doc/data_model
 DATA_MODEL_DIR=$1
 #SCRIPT_DIR=`dirname $0`
 #SCRIPT_DIR="${0%/*}"

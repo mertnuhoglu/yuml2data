@@ -13,7 +13,7 @@ vignette: >
 
 File structure
 
-    ~/projects/itr/itr_documentation/data_model master*
+    ~/projects/itr/vrp_doc/data_model master*
     ❯ tree
     .
     ├── data

@@ -19,7 +19,7 @@ main_manual_rdb_to_data = function() {
   main_rdb_to_data_step01()
   # manual steps:
   # process ddl.sql -> ddl_m.sql
-  # ~/projects/itr/itr_documentation/data_model/data/view/ddl_m.sql
+  # ~/projects/itr/vrp_doc/data_model/data/view/ddl_m.sql
   # %s/\<BIGINT\>/INT/g
   # tabloların referans sıralamasını düzelt
   # tüm enum'ların df ifadelerini oluştur
@@ -43,9 +43,9 @@ main_rdb_to_data_step01 = function() {
 	mkdir_dir_structure()
   yuml_inputs = main_yuml_to_uml()
   main_yuml_to_rdb__yuml_to_ddl()
-  #> ~/projects/itr/itr_documentation/data_model/data/view/ddl.sql
+  #> ~/projects/itr/vrp_doc/data_model/data/view/ddl.sql
   rdb_inputs = main_rdb_to_data()
-  #> ~/projects/itr/itr_documentation/data_model/data/sql/sql_insert/sql_insert_enum_var.sql
+  #> ~/projects/itr/vrp_doc/data_model/data/sql/sql_insert/sql_insert_enum_var.sql
 	main_enum_rdb_to_datafiller_enum_txt()
 	#> ~/projects/itr/yuml2data_wt/dm/rdb/view/route_stop_enum.txt
   print("=====")
@@ -61,9 +61,9 @@ main_rdb_to_data_step01 = function() {
 #' @export
 main_rdb_to_data_step02 = function() {
 	mkdir_dir_structure()
-  #< ~/projects/itr/itr_documentation/data_model/data/view/ddl_m.sql
+  #< ~/projects/itr/vrp_doc/data_model/data/view/ddl_m.sql
   main_ddl_to_data()
-  #> ~/projects/itr/itr_documentation/data_model/data/view/data.sql
+  #> ~/projects/itr/vrp_doc/data_model/data/view/data.sql
 	copy_files_to_psk_file_structure()
 }
 
@@ -164,13 +164,13 @@ data_model_dir = function() {
 env_data_model_dir = function() {
   data_model_dir = Sys.getenv("DATA_MODEL_DIR")
   if (data_model_dir == "") {
-    Sys.setenv(DATA_MODEL_DIR = "/Users/mertnuhoglu/projects/itr/itr_documentation/data_model/")
+    Sys.setenv(DATA_MODEL_DIR = "/Users/mertnuhoglu/projects/itr/vrp_doc/data_model/")
   }
   return(data_model_dir)
 }
 
 setenv_osx = function() {
-  Sys.setenv(DATA_MODEL_DIR = "/Users/mertnuhoglu/projects/itr/itr_documentation/data_model/")
+  Sys.setenv(DATA_MODEL_DIR = "/Users/mertnuhoglu/projects/itr/vrp_doc/data_model/")
   env_data_model_dir()
 }
 
